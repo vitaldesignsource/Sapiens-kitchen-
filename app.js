@@ -134,7 +134,7 @@ menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('ari
 mobileNav.querySelectorAll('a,button').forEach(a=>a.addEventListener('click',()=>closeNav()));
 document.addEventListener('click',e=>{if(!mobileNav.hidden&&!mobileNav.contains(e.target)&&!menuToggle.contains(e.target))closeNav();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNav(true);});
-matchMedia('(min-width:801px)').addEventListener('change',e=>{if(e.matches)closeNav();});
+matchMedia('(min-width:1051px)').addEventListener('change',e=>{if(e.matches)closeNav();});
 const reservationDialog=document.querySelector('#reservation-dialog');const menuDialog=document.querySelector('#menu-dialog');
 function openDialog(dialog,trigger=document.activeElement){
  const current=document.querySelector('dialog[open]');
@@ -151,17 +151,19 @@ document.querySelectorAll('dialog').forEach(dialog=>{
 const menuSearch=document.querySelector('#menu-search');
 function normalize(value){return value.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();}
 function renderFullMenu(){
- const query=normalize(menuSearch.value.trim());let count=0;
+ const query=normalize(menuSearch.value.trim());const category=document.querySelector('#menu-category').value;let count=0;
  const html=Object.entries(menuSections).map(([group,items])=>{
+  if(category!=='all'&&category!==group)return '';
   const matches=items.filter(item=>normalize(item.join(' ')).includes(query));count+=matches.length;
   if(!matches.length)return '';
   return `<section class="full-menu-group"><h3>${group}</h3>${matches.map(([name,price,description])=>`<div class="full-menu-item"><h4>${name}</h4><span>${price==='Market price'?price:'$'+price}</span><p>${description}</p></div>`).join('')}</section>`;
  }).join('');
  document.querySelector('#full-menu-content').innerHTML=html||'<div class="menu-empty"><h3>Something else in mind?</h3><p>Try a dish or ingredient, such as salmon, duck, or chocolate.</p></div>';
- document.querySelector('#menu-result-count').textContent=query?`${count} ${count===1?'dish':'dishes'} found`:'43 dishes, made with care';
+ document.querySelector('#menu-result-count').textContent=(query||category!=='all')?`${count} ${count===1?'dish':'dishes'} found`:`${count} dishes, made with care`;
 }
 menuSearch.addEventListener('input',renderFullMenu);
-document.querySelector('[data-full-menu]').addEventListener('click',e=>{menuSearch.value='';renderFullMenu();openDialog(menuDialog,e.currentTarget);});
+document.querySelector('#menu-category').addEventListener('change',renderFullMenu);
+document.querySelectorAll('[data-full-menu]').forEach(button=>button.addEventListener('click',e=>{menuSearch.value='';document.querySelector('#menu-category').value='all';renderFullMenu();openDialog(menuDialog,e.currentTarget);}));
 const dateInput=document.querySelector('#reservation-date');const timeSelect=document.querySelector('[name="time"]');const error=document.querySelector('#reservation-error');
 function restaurantNow(){
  const parts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'America/Phoenix',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).map(x=>[x.type,x.value]));
@@ -200,3 +202,38 @@ if('IntersectionObserver' in window){
  new IntersectionObserver(entries=>{footerVisible=entries[0].isIntersecting;updateBooking();},{threshold:0}).observe(document.querySelector('footer'));
 }
 document.querySelector('#year').textContent=String(new Date().getFullYear());
+// Complete the smaller visitor journeys with the same care as dinner reservations.
+(() => {
+ const header=document.querySelector('.site-header');
+ const updateHeader=()=>{header.classList.toggle('has-scrolled',scrollY>32);if(!mobileNav.hidden)mobileNav.style.top=Math.round(header.getBoundingClientRect().bottom)+'px';};
+ menuToggle.addEventListener('click',()=>{mobileNav.style.top=Math.round(header.getBoundingClientRect().bottom)+'px';});
+ window.addEventListener('scroll',updateHeader,{passive:true});window.addEventListener('resize',updateHeader);updateHeader();
+ if('IntersectionObserver' in window){
+  const navLinks=[...document.querySelectorAll('.desktop-nav>a')];
+  const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;navLinks.forEach(link=>{if(link.hash==='#'+entry.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}},{rootMargin:'-18% 0px -55% 0px',threshold:0});
+  navLinks.forEach(link=>{const section=document.querySelector(link.hash);if(section)observer.observe(section);});
+ }
+ const mealDialog=document.querySelector('#meal-dialog');const cateringDialog=document.querySelector('#catering-dialog');
+ document.querySelectorAll('[data-meal-prep]').forEach(button=>button.addEventListener('click',()=>openDialog(mealDialog,button)));
+ document.querySelectorAll('[data-catering]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('#catering-date').min=restaurantNow().date;openDialog(cateringDialog,button);}));
+ document.querySelector('#catering-date').min=restaurantNow().date;
+ const cateringForm=document.querySelector('#catering-form');const cateringDraft=document.querySelector('#catering-draft');
+ cateringForm.addEventListener('input',()=>{cateringDraft.hidden=true;});
+ cateringForm.addEventListener('submit',event=>{
+  event.preventDefault();const data=new FormData(cateringForm);
+  const lines=['Hello Sapiens Kitchen,','','I would love to discuss catering for an upcoming occasion.','','Occasion: '+data.get('occasion'),'Event date: '+data.get('date'),'Estimated guests: '+data.get('guests'),'','A little about our plans:',data.get('notes')||'Happy to discuss the details.','','Thank you!'];
+  document.querySelector('#catering-email').href='mailto:catering@sapienskitchen.com?subject='+encodeURIComponent('Catering enquiry — '+data.get('occasion'))+'&body='+encodeURIComponent(lines.join('\n'));
+  cateringDraft.hidden=false;cateringDraft.scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});document.querySelector('#catering-email').focus({preventScroll:true});
+ });
+ document.querySelectorAll('.faq-list details').forEach(detail=>detail.addEventListener('toggle',()=>{if(detail.open)document.querySelectorAll('.faq-list details').forEach(other=>{if(other!==detail)other.open=false;});}));
+ document.querySelector('#print-menu').addEventListener('click',()=>{menuSearch.value='';document.querySelector('#menu-category').value='all';renderFullMenu();window.print();});
+ const copyButton=document.querySelector('#copy-address');
+ copyButton.addEventListener('click',async()=>{
+  const address='Sapiens Paleo Kitchen, 10411 E McDowell Mountain Ranch Rd, Suite 120, Scottsdale, AZ 85255';
+  try{await navigator.clipboard.writeText(address);copyButton.textContent='Address copied ✓';document.querySelector('#copy-address-status').textContent='Restaurant address copied to clipboard.';}
+  catch{copyButton.textContent=address;document.querySelector('#copy-address-status').textContent='Select the displayed restaurant address to copy it.';}
+ });
+ const status=document.querySelector('#dinner-status');
+ function updateDinnerStatus(){const now=restaurantNow();const today=serviceDay(now.date);const open=today&&now.minutes>=17*60&&now.minutes<21*60;status.classList.toggle('is-open',open);status.textContent=open?'Dinner service now · until 9 pm':today&&now.minutes<17*60?'Dinner tonight · 5–9 pm':'Dinner Wednesday–Saturday · 5–9 pm';}
+ updateDinnerStatus();setInterval(updateDinnerStatus,60000);
+})();
