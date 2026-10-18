@@ -54,3 +54,27 @@ Expanded migration notes: See link-audit.json for the original-to-new destinatio
 REFINEMENT — NATIVE SVG
 Asset: /workspace/sites/sapiens-kitchen-sync/dist/assets/olive-divider.svg
 Original code-native vector: a restrained olive sprig in brass, reused above the exact story text and in the homepage philosophy section. Paths draw once with a brief leaf fade; reduced motion keeps the full static ornament. No new bitmap generation was needed in this refinement pass.
+
+
+SCOTTSDALE PHOTOGRAPHY & CAROUSEL — October 17, 2026
+
+The two storefront photographs were supplied by the owner. They have only been encoded and resized for delivery; their visual content, signage and Aurore's appearance are retained. The signage is part of the supplied photograph; current hours remain in the site's visit information.
+Final photo assets (each also has -960.webp and -640.webp responsive variants):
+/workspace/sites/sapiens-kitchen-sync/dist/assets/sapiens-storefront-evening.webp
+/workspace/sites/sapiens-kitchen-sync/dist/assets/aurore-storefront.webp
+
+New scenery: built-in image generation, photorealistic-natural.
+Final generated project asset (also -960.webp and -640.webp variants):
+/workspace/sites/sapiens-kitchen-sync/dist/assets/mcdowell-sonoran-atmosphere.webp
+
+This generated scenery is an artistic impression inspired by the McDowell Sonoran Preserve, not a documented exact viewpoint or a view from the restaurant. The carousel caption and visit hero identify it as a landscape impression. Botanical and geological references: https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/preserve/cultural-resource-master-plan.pdf?sfvrsn=df504145_1 and https://mcdowellsonoran.org/granite/.
+
+Final generation prompt:
+Use case: photorealistic-natural.
+Asset type: premium photographic website carousel and atmospheric visit-page background, for Sapiens Kitchen in North Scottsdale.
+Primary request: a breathtaking but completely believable photographic impression of Scottsdale's McDowell Sonoran Preserve in warm late-afternoon light. The McDowell Mountains form a rugged low desert mountain backdrop; abundant natural saguaro cactus of varied heights and shapes, scattered cholla and prickly pear, palo verde and ironwood, weathered granite boulders and sandy decomposed-granite desert terrain. Inspired by the Granite Mountain area of the Preserve, with layered real-looking ridges fading into distance. This is an artistic landscape impression, not a claim of a precisely documented viewpoint.
+Composition/framing: wide horizontal 3:2 landscape, fine-art travel editorial photograph, eye-level 35mm lens. Foreground granite and sculptural saguaros lead into layered mountains, subtle winding empty dirt trail. Horizon in upper third, natural breathing room, balanced asymmetry. Compose for a full-frame carousel and a shallow cropped website banner.
+Lighting/mood: low golden sunlight just before sunset, warm tactile stone, long soft shadows, pale muted blue sky with faint high clouds, rich olive greens and subtle dusty terracotta. Warm and refined to complement a French bistro website. Exceptional photographic detail and natural optical depth, realistic exposure and highlights.
+Constraints: no buildings, no restaurant, no people, no animals, no signage, no typography, no logos, no watermark; no red Sedona spires, no sand dunes, no Monument Valley, no Joshua trees, no fantastical cactus shapes, no oversaturated orange sky, no artificial lens flare. Authentic Sonoran desert botany and weathered granite geology.
+
+The homepage gallery uses four scenes: evening storefront, Aurore outside, Sonoran landscape impression, and the existing dining-room photograph. Seven-second autoplay runs only while at least a quarter of the gallery is in view and the document is visible. Mouse hover pauses the photos; keyboard focus and manual navigation stop autoplay until Play is selected. Controls support arrows, Home/End, direct photo selection and swipe. Reduced motion disables autoplay and photo zoom. All four images remain accessible in a native scrolling gallery without JavaScript.
