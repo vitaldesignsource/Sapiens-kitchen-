@@ -10,6 +10,8 @@
   --wine: #792e3f;
   --brass: #a8854d;
   --paper: #f3ead8;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --script: 'Parisienne', 'Cormorant Garamond', Georgia, cursive;
 }
 body { background: var(--cream); }
 ::selection { background: #e8d2ba; color: var(--ink); }
@@ -29,14 +31,18 @@ body { background: var(--cream); }
 .button.cream { background: var(--cream); border-color: var(--cream); color: var(--wine); }
 .button.cream:hover { background: #ecdec5; border-color: #ecdec5; }
 .text-link { padding-bottom: 9px; }
-h2 { letter-spacing: -1.5px; }
+h1, h2, h3 { font-weight: 500; }
+h2 { letter-spacing: -1.1px; }
+em { font-weight: 500; }
+.dish-info h3, .service-list h3, .full-menu-item h4 { font-weight: 600; }
+.hero-bienvenue, .signature, .footer-top > p { font-family: var(--script); font-style: normal; font-weight: 400; }
 .eyebrow { font-size: 10px; letter-spacing: 1.9px; }
 .hero { grid-template-columns: 1fr 1fr; gap: 7%; padding: 58px 6.5% 66px; position: relative; }
 .hero-copy { padding-top: 23px; min-width: 0; }
-.hero-bienvenue { color: var(--wine); font-family: var(--serif); font-size: 27px; font-style: italic; line-height: 1.3; margin-bottom: 25px; }
+.hero-bienvenue { color: var(--wine); font-family: var(--script); font-size: 36px; font-style: normal; line-height: 1.3; margin-bottom: 25px; }
 .hero .eyebrow { font-size: 10px; letter-spacing: 1.6px; color: var(--muted); }
 .tiny-line { background: var(--brass); width: 28px; }
-.hero h1 { font-size: clamp(66px,6.25vw,101px); line-height: 1.09; letter-spacing: -3.1px; margin: 25px 0 25px; }
+.hero h1 { font-size: clamp(66px,6.9vw,111px); line-height: 1.02; letter-spacing: -2.7px; margin: 25px 0 25px; }
 .hero h1 em { color: var(--wine); }
 .hero-description { color: #6e695e; font-size: 15px; line-height: 1.85; max-width: 360px; }
 .hero-buttons { gap: 26px; margin-top: 28px; }
@@ -122,7 +128,7 @@ h2 { letter-spacing: -1.5px; }
 .dinner-status { color: var(--wine); }
 footer { background: var(--green); border-top: 5px double #bfa46b; padding-top: 45px; }
 .footer-top { border-bottom: 3px double #b89b615c; }
-.footer-top > p { color: #e5cba0; font-style: italic; font-size: 36px; }
+.footer-top > p { color: #e5cba0; font-style: normal; font-size: 36px; }
 .footer-bottom { color: #d6d4c5; }
 .mobile-booking { background: var(--cream); border-color: var(--brass); border-radius: 3px; box-shadow: 0 4px 25px #3b271d26; }
 dialog { background: var(--cream); border: 1px solid #b49a6c; border-radius: 3px; }
@@ -148,7 +154,7 @@ dialog::backdrop { background: #24251fc4; }
   .hero { gap: 6%; padding-left: 5%; padding-right: 5%; }
   .hero h1 { font-size: 6.5vw; }
   .hero-visual { min-height: 590px; }
-  .hero-bienvenue { font-size: 25px; }
+  .hero-bienvenue { font-size: 33px; }
   .hero .eyebrow { font-size: 9px; letter-spacing: 1.2px; }
   .hero-buttons { flex-direction: column; align-items: flex-start; gap: 20px; }
   .hero-foot > a { display: none; }
@@ -160,7 +166,7 @@ dialog::backdrop { background: #24251fc4; }
   .site-header { height: 90px; }
   .official-brand { width: 185px; }
   .hero { gap: 6%; padding-top: 43px; padding-bottom: 56px; }
-  .hero-bienvenue { font-size: 24px; margin-bottom: 21px; }
+  .hero-bienvenue { font-size: 31px; margin-bottom: 21px; }
   .hero .eyebrow { font-size: 8px; letter-spacing: .9px; gap: 8px; }
   .tiny-line { width: 17px; }
   .hero h1 { font-size: 6.9vw; letter-spacing: -2px; }
@@ -189,9 +195,9 @@ dialog::backdrop { background: #24251fc4; }
   .header-actions > .button.small { padding: 12px; font-size: 10px; gap: 13px; }
   .hero { display: flex; flex-direction: column; padding: 34px 7% 49px; gap: 30px; }
   .hero-copy { padding: 0; }
-  .hero-bienvenue { font-size: 25px; margin-bottom: 21px; }
+  .hero-bienvenue { font-size: 34px; margin-bottom: 21px; }
   .hero .eyebrow { font-size: 8px; letter-spacing: 1.2px; gap: 10px; }
-  .hero h1 { font-size: clamp(58px,14vw,82px); letter-spacing: -2px; line-height: 1.06; margin: 22px 0 23px; }
+  .hero h1 { font-size: clamp(64px,16vw,91px); letter-spacing: -1.8px; line-height: 1.02; margin: 22px 0 23px; }
   .hero-description { font-size: 14px; line-height: 1.85; max-width: 100%; }
   .hero-buttons { flex-direction: row; gap: 20px; align-items: center; margin-top: 25px; }
   .hero-buttons .button { font-size: 11px; gap: 20px; padding: 17px; }
@@ -252,8 +258,8 @@ dialog::backdrop { background: #24251fc4; }
   .announcement .announcement-bonjour { font-size: 11px; }
   .announcement > span:first-child, .announcement > span:last-child { display: none; }
   .hero { padding-left: 7%; padding-right: 7%; }
-  .hero h1 { font-size: 15.3vw; letter-spacing: -2px; }
-  .hero-bienvenue { font-size: 24px; }
+  .hero h1 { font-size: 17vw; letter-spacing: -1.7px; }
+  .hero-bienvenue { font-size: 31px; }
   .hero .eyebrow { font-size: 7px; letter-spacing: 1px; }
   .hero-description { font-size: 13px; }
   .hero-buttons { gap: 15px; }
@@ -271,4 +277,43 @@ dialog::backdrop { background: #24251fc4; }
   #menu-dialog { border: 0; background: white; }
   .full-menu-header { border-bottom: 2px solid #000; }
   .full-menu-header h2, .full-menu-group > h3, .full-menu-item > span { color: #000; }
+}
+
+/* Five kitchen principles, each kept visible at every screen size. */
+.dietary-section { background: var(--green); color: var(--cream); border-top: 3px double #bda574; border-bottom: 3px double #bda574; padding: 35px 7% 38px; }
+.dietary-intro { text-align: center; }
+.dietary-intro > .eyebrow { color: #ddc99e; font-size: 9px; letter-spacing: 2.6px; }
+.dietary-intro h2 { font-family: var(--script); font-size: 38px; font-style: normal; font-weight: 400; letter-spacing: 0; line-height: 1.35; margin: 9px 0 8px; }
+.dietary-intro > p:last-child { color: #dddcd0; font-size: 12px; letter-spacing: .1px; }
+.dietary-list { list-style: none; margin: 28px auto 0; padding: 0; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); max-width: 1050px; gap: 24px; }
+.dietary-list > li { display: flex; align-items: center; flex-direction: column; gap: 13px; min-width: 0; text-align: center; }
+.dietary-icon { width: 74px; height: 74px; display: block; overflow: visible; flex-shrink: 0; }
+.dietary-ring { fill: none; stroke: #a1be62; stroke-width: 3; }
+.dietary-motif { color: var(--cream); fill: currentColor; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.dietary-motif .drop-highlight { stroke: var(--green); stroke-width: 2.5; }
+.dietary-slash { fill: none; stroke: #a1be62; stroke-width: 5; stroke-linecap: butt; }
+.dietary-list > li > span { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 1.1px; line-height: 1.5; text-transform: uppercase; }
+@media(max-width:800px) {
+  .dietary-section { padding-left: 6%; padding-right: 6%; }
+  .dietary-list { gap: 18px; }
+  .dietary-icon { width: 65px; height: 65px; }
+  .dietary-list > li > span { font-size: 10px; letter-spacing: .8px; }
+}
+@media(max-width:600px) {
+  .dietary-section { padding: 31px 7% 34px; }
+  .dietary-intro > .eyebrow { font-size: 8px; letter-spacing: 2.1px; }
+  .dietary-intro h2 { font-size: 32px; margin: 11px 0 8px; }
+  .dietary-intro > p:last-child { font-size: 11px; max-width: 250px; margin: auto; }
+  .dietary-list { grid-template-columns: repeat(6,minmax(0,1fr)); gap: 22px 7px; margin-top: 24px; max-width: 440px; }
+  .dietary-list > li { grid-column: span 2; gap: 9px; }
+  .dietary-list > li:nth-child(4) { grid-column: 2 / span 2; }
+  .dietary-list > li:nth-child(5) { grid-column: 4 / span 2; }
+  .dietary-icon { width: 65px; height: 65px; }
+  .dietary-list > li > span { font-size: 9px; letter-spacing: .8px; }
+  .signature { font-size: 46px; }
+}
+@media(max-width:370px) {
+  .dietary-intro h2 { font-size: 28px; }
+  .dietary-icon { width: 59px; height: 59px; }
+  .dietary-list > li > span { font-size: 8px; letter-spacing: .8px; }
 }

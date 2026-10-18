@@ -40,3 +40,35 @@
   font-display: swap;
   src: url(font-5.ttf) format('truetype');
 }
+
+/* French type pairing. Cormorant Garamond is subset to Latin / Latin Extended.
+   Parisienne is distributed unchanged. Both use the SIL Open Font License;
+   the corresponding license notices are in french-fonts/. */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(french-fonts/cormorant-garamond-500.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(french-fonts/cormorant-garamond-600.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(french-fonts/cormorant-garamond-italic-500.woff) format('woff');
+}
+@font-face {
+  font-family: 'Parisienne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(french-fonts/parisienne-400.ttf) format('truetype');
+}
