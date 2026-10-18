@@ -1,0 +1,793 @@
+{
+  "checked": "2026-10-17",
+  "scope": "Reachable restaurant navigation, informational body links, journal/archive routes, current catalogue item links and service links. Search and sitemap retrieval could not establish unlinked or private pages.",
+  "routes": [
+    {
+      "original": "https://sapienskitchen.com/product/beef-stroganoff/",
+      "destination": "paleo-menu.html#beef-stroganoff",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/chicken-croquette-apple/",
+      "destination": "paleo-menu.html#chicken-croquette-apple",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/chicken-french-curry/",
+      "destination": "paleo-menu.html#chicken-french-curry",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/cod-shallot/",
+      "destination": "paleo-menu.html#cod-shallot",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/pork-chop-thyme/",
+      "destination": "paleo-menu.html#pork-chop-thyme",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/steak-au-jus/",
+      "destination": "paleo-menu.html#steak-au-jus",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/tuna-nicoise/",
+      "destination": "paleo-menu.html#tuna-ni-oise",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/turkey-alfredo/",
+      "destination": "paleo-menu.html#turkey-alfredo",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/xps-custom-entree/",
+      "destination": "paleo-menu.html#xps-custom-entree",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/beet-tartar/",
+      "destination": "paleo-menu.html#beet-tartar",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/bone-broth/",
+      "destination": "paleo-menu.html#bone-broth-4oz",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/onion-soup/",
+      "destination": "paleo-menu.html#onion-soup",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-krout/",
+      "destination": "paleo-menu.html#sapiens-kraut",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-creme-brulee-keto/",
+      "destination": "paleo-menu.html#sapiens-cr-me-brul-e-keto",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/clafoutis/",
+      "destination": "paleo-menu.html#clafoutis",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/creme-caramel/",
+      "destination": "paleo-menu.html#cr-me-caramel",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/les-chocolats-vegan/",
+      "destination": "paleo-menu.html#les-chocolats-vegan",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/waffle-tartine/",
+      "destination": "paleo-menu.html#waffle-tartine",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-paleo-bread/",
+      "destination": "paleo-menu.html#sapiens-paleo-bread",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/meal-prep/paleo-menu/",
+      "destination": "paleo-menu.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/meal-plans/paleo-menu/",
+      "destination": "paleo-menu.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/beef-stroganoff-k/",
+      "destination": "keto-menu.html#beef-stroganoff",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/chicken-croquette-apple-k/",
+      "destination": "keto-menu.html#chicken-croquette-apple",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/chicken-french-curry-k/",
+      "destination": "keto-menu.html#chicken-french-curry",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/cod-shallot-k/",
+      "destination": "keto-menu.html#cod-shallot",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/pork-chop-thyme-k/",
+      "destination": "keto-menu.html#pork-chop-thyme",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/steak-au-jus-k/",
+      "destination": "keto-menu.html#steak-au-jus",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/tuna-nicoise-k/",
+      "destination": "keto-menu.html#tuna-ni-oise",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/turkey-alfredo-k/",
+      "destination": "keto-menu.html#turkey-alfredo",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/xps-custom-entree-k/",
+      "destination": "keto-menu.html#xps-custom-entree",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/beet-tartar/",
+      "destination": "keto-menu.html#beet-tartar",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/bone-broth/",
+      "destination": "keto-menu.html#bone-broth-4oz",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/onion-soup/",
+      "destination": "keto-menu.html#onion-soup",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-krout/",
+      "destination": "keto-menu.html#sapiens-kraut",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-creme-brulee-keto/",
+      "destination": "keto-menu.html#sapiens-cr-me-brul-e-keto",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/clafoutis/",
+      "destination": "keto-menu.html#clafoutis",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/creme-caramel/",
+      "destination": "keto-menu.html#cr-me-caramel",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/les-chocolats-vegan/",
+      "destination": "keto-menu.html#les-chocolats-vegan",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/waffle-tartine/",
+      "destination": "keto-menu.html#waffle-tartine",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sapiens-paleo-bread/",
+      "destination": "keto-menu.html#sapiens-paleo-bread",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/meal-prep/keto-menu/",
+      "destination": "keto-menu.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/meal-plans/keto-menu/",
+      "destination": "keto-menu.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/tenderloin-of-beef-gs/",
+      "destination": "gourmet-menu.html#tenderloin-of-beef",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/new-york-steak-gs/",
+      "destination": "gourmet-menu.html#new-york-steak",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/roasted-duck-gs/",
+      "destination": "gourmet-menu.html#roasted-duck",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/pork-tenderloin-gs/",
+      "destination": "gourmet-menu.html#pork-tenderloin",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/braised-short-ribs-gs/",
+      "destination": "gourmet-menu.html#braised-short-ribs",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/turkey-breast-ballotine-gs/",
+      "destination": "gourmet-menu.html#turkey-breast-ballotine",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/paleo-meatloaf-gs/",
+      "destination": "gourmet-menu.html#paleo-meatloaf",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/potatoes-au-gratin-dairy-free-gs/",
+      "destination": "gourmet-menu.html#potatoes-au-gratin-dairy-free",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/smashed-basil-and-sage-potato-gs/",
+      "destination": "gourmet-menu.html#smashed-basil-sage-potato",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/whipped-mashed-potatoes-gs/",
+      "destination": "gourmet-menu.html#whipped-mashed-potatoes",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/roasted-butternut-squash-gs/",
+      "destination": "gourmet-menu.html#roasted-butternut-squash",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/spinach-leek-souffle-gs/",
+      "destination": "gourmet-menu.html#spinach-leek-souffl",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/balsamic-glazed-brussels-sprouts-gs/",
+      "destination": "gourmet-menu.html#balsamic-glazed-brussels-sprouts",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/roasted-broccoli-with-chili-paste-gs/",
+      "destination": "gourmet-menu.html#roasted-broccoli-with-chili-paste",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/cauliflower-gratin-gs/",
+      "destination": "gourmet-menu.html#cauliflower-gratin",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/sweet-potato-chestnut-souffle-gs/",
+      "destination": "gourmet-menu.html#sweet-potato-chestnut-souffl",
+      "handling": "local catalogue + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/5-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/7-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/8-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/10-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/12-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/14-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product/16-meals-per-week/",
+      "destination": "meal-prep-subscription.html",
+      "handling": "local plan selection + live purchase",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/wp-content/uploads/2025/02/PALEO-CATERING-by-Sapiens-Kitchen-2_4_25.pdf",
+      "destination": "catering-menu.html",
+      "handling": "local PDF reader + original download",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/gift-cards/gift-card-online-form/",
+      "destination": "gift-card-order.html",
+      "handling": "local choices + live payment form",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/paleo-diet-benefits/",
+      "destination": "paleo-diet-benefits.html",
+      "handling": "local introduction + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-completely-avoid-all-grains-and-grain-products/",
+      "destination": "grain-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-give-up-milk-and-dairy-products/",
+      "destination": "dairy-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-stay-away-from-sugar/",
+      "destination": "sugar-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-stop-eating-soy-and-all-soy-products/",
+      "destination": "soy-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-five-reasons-why-beans-and-lentils-are-not-good-for-consumption/",
+      "destination": "legumes.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-avoid-trans-fats/",
+      "destination": "fats-and-oils.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-facts-about-gmo-foods-you-didnt-know/",
+      "destination": "thoughtful-sourcing.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-five-reasons-why-eating-corn-doesnt-make-any-sense/",
+      "destination": "corn-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-10-reasons-to-steer-clear-of-peanuts-and-peanut-butter/",
+      "destination": "peanut-free.html",
+      "handling": "local kitchen notes + original essay",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/top-ten-reasons-to-avoid-sugar/",
+      "destination": "sugar-free.html",
+      "handling": "alias",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-blog/",
+      "destination": "paleo-journal.html",
+      "handling": "local journal index",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/category/paleo-blog/",
+      "destination": "paleo-journal.html",
+      "handling": "local journal index",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/author/roman/",
+      "destination": "paleo-journal.html",
+      "handling": "local journal index",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/2019/01/",
+      "destination": "paleo-journal.html",
+      "handling": "local journal index",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/press-media/",
+      "destination": "press-media.html",
+      "handling": "local archive with original publications",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/cart/",
+      "destination": "cart.html",
+      "handling": "local service page + original account or checkout",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/checkout/",
+      "destination": "checkout.html",
+      "handling": "local service page + original account or checkout",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/my-account/",
+      "destination": "my-account.html",
+      "handling": "local service page + original account or checkout",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/my-account/edit-account/",
+      "destination": "my-account.html",
+      "handling": "local service page + original account or checkout",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/my-account/lost-password/",
+      "destination": "reset-password.html",
+      "handling": "local service page + original account or checkout",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/online-purchase-terms-conditions/",
+      "destination": "ordering-terms.html",
+      "handling": "local policy guide + full original terms",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/online-purchase-terms-basic-text/",
+      "destination": "ordering-terms.html",
+      "handling": "local policy guide + full original terms",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/disclaimer/",
+      "destination": "disclaimer.html",
+      "handling": "local introduction + original complete terms",
+      "note": ""
+    },
+    {
+      "original": "https://eepurl.com/drR2fD",
+      "destination": "newsletter.html",
+      "handling": "local signup introduction + newsletter service",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product-category/uncategorized/",
+      "destination": "shop.html",
+      "handling": "local catalogue",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product-category/gift-card/",
+      "destination": "gift-card-order.html",
+      "handling": "local catalogue",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product-category/gourmet-shop/",
+      "destination": "gourmet-menu.html",
+      "handling": "local catalogue",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/product-category/meal-prep/",
+      "destination": "meal-prep.html",
+      "handling": "local catalogue",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/about-us/",
+      "destination": "about-us.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/our-story/",
+      "destination": "our-story.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/chef-aurore/",
+      "destination": "chef-aurore.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/dinner-menu/",
+      "destination": "dinner-menu.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/meal-prep/",
+      "destination": "meal-prep.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/catering/",
+      "destination": "catering.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/paleo-bakery/",
+      "destination": "paleo-bakery.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/gourmet-shop/",
+      "destination": "gourmet-shop.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/gift-cards/",
+      "destination": "gift-cards.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/take-out/",
+      "destination": "take-out.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/special-events/",
+      "destination": "special-events.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/",
+      "destination": "index.html",
+      "handling": "local",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/gourmet-shop/",
+      "destination": "gourmet-menu.html",
+      "handling": "local overview and full catalogue",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/wp-content/uploads/2021/11/SapiensKitchenGourmentShop11.21.pdf",
+      "destination": "gourmet-menu.html",
+      "handling": "local catalogue + original PDF download",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/wp-content/uploads/2019/01/SPKGIFTCARDform.pdf",
+      "destination": "gift-card-order.html",
+      "handling": "local options + original PDF download",
+      "note": ""
+    },
+    {
+      "original": "https://www.grubhub.com/restaurant/sapiens-paleo-kitchen-10411-e-mcdowell-mountain-ranch-rd--120-scottsdale/1170911",
+      "destination": "take-out.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://www.doordash.com/",
+      "destination": "take-out.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://www.ubereats.com/",
+      "destination": "take-out.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://www.youtube.com/watch?v=yVHWzx69A1s",
+      "destination": "press-media.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://issuu.com/timespub/docs/sp_081119/1?e=8633901%2F71711647",
+      "destination": "press-media.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://sapienskitchen.com/wp-content/uploads/2021/07/Jul_2021_Life_at_McDowell_Mountain-EDITED.pdf",
+      "destination": "press-media.html",
+      "handling": "preserved external link on local page",
+      "note": ""
+    },
+    {
+      "original": "https://www.instagram.com/sapienskitchen/",
+      "destination": "https://www.instagram.com/sapienskitchen/",
+      "handling": "preserved service, map or social destination",
+      "note": ""
+    },
+    {
+      "original": "https://www.facebook.com/SapiensKitchen/",
+      "destination": "https://www.facebook.com/SapiensKitchen/",
+      "handling": "preserved service, map or social destination",
+      "note": ""
+    },
+    {
+      "original": "https://www.opentable.com/r/sapiens-paleo-kitchen-reservations-scottsdale",
+      "destination": "https://www.opentable.com/r/sapiens-paleo-kitchen-reservations-scottsdale",
+      "handling": "preserved service, map or social destination",
+      "note": ""
+    },
+    {
+      "original": "https://www.google.com/maps/search/?api=1&query=Sapiens+Kitchen+10411+E+McDowell+Mountain+Ranch+Rd+Scottsdale+AZ",
+      "destination": "https://www.google.com/maps/search/?api=1&query=Sapiens+Kitchen+10411+E+McDowell+Mountain+Ranch+Rd+Scottsdale+AZ",
+      "handling": "preserved service, map or social destination",
+      "note": ""
+    }
+  ],
+  "implementation_notes": [
+    "User-supplied About Us, Our Story, and Chef Aurore text is reproduced verbatim.",
+    "Journal pages are new culinary introductions with links to the full original essays; full legacy essays were not supplied for verbatim migration.",
+    "Legal pages provide local guidance and link to the complete published policies.",
+    "Cart, login, password reset, subscriptions, and payment continue through the existing commerce service.",
+    "The original press page has duplicated or mismatched article targets; the local archive preserves identifiable features and links to the original clipping archive.",
+    "Some direct product and press targets could not be retrieved; those products fall back to their live category ordering menu.",
+    "Original meal pages show inconsistent pickup and delivery windows. The local delivery page asks visitors to confirm the final window at checkout.",
+    "Browser QA unavailable because the managed preview infrastructure could not mount /proc. Exact text, internal references, assets, reachability, JavaScript syntax, and repeatable generation were checked."
+  ],
+  "catalogue_retrieval": {
+    "attempted": 60,
+    "retrieved": 51,
+    "fallbacks": [
+      {
+        "catalogue_link": "turn5view1:25",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn5view1:28",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn7view1:22",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn7view1:24",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn7view1:34",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn5view3:15",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn5view3:18",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn5view3:23",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      },
+      {
+        "catalogue_link": "turn5view3:24",
+        "status": "retrieval unavailable",
+        "fallback": "current category ordering page"
+      }
+    ]
+  }
+}

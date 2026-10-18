@@ -23,3 +23,30 @@ https://sapienskitchen.com/special-events/
 The special-occasions page uses evergreen contact and planning information. Historic unavailable offers have not been republished as current events. Ordering, payments, and reservation confirmations remain with the restaurant’s established services.
 
 France outline: Natural Earth 1:110m country boundaries; mainland France and Corsica. https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
+
+ADDITIONAL FRENCH BACKGROUNDS — October 17, 2026
+Mode: built-in image generation.
+Final project assets:
+/workspace/sites/sapiens-kitchen-sync/dist/assets/paris-dawn-atmosphere.webp
+/workspace/sites/sapiens-kitchen-sync/dist/assets/french-potager-atmosphere.webp
+
+Paris dawn prompt:
+Use case: photorealistic-natural.
+Asset type: wide atmospheric website background for the French-inspired Sapiens Kitchen restaurant story page.
+Primary request: an exquisite photographic impression of a quiet Parisian street at early morning, classical cream limestone Haussmann facades, an understated French bistro corner with burgundy awning, wrought iron details, soft reflections on the pavement, a little olive foliage. This represents French heritage, not the actual Scottsdale restaurant.
+Composition/framing: landscape panorama approximately 2:1, eye-level 35mm architectural editorial photograph. Strong composition with the street and facade details toward the right; softly shadowed low-detail negative space on the left for white headline typography. Realistic perspective, beautifully restrained.
+Lighting/mood: warm dawn light filtered through a light mist, natural highlights, cinematic yet believable. Warm ivory stone, burgundy, bottle green, muted brass.
+Materials/textures: detailed weathered limestone, fine linen awning, subtle stone pavement texture.
+Text: none. No signs, lettering, logos or watermarks, no people, no food, no Eiffel Tower, no collage, no illustration, no oversaturation.
+
+French potager prompt:
+Use case: photorealistic-natural.
+Asset type: wide premium website background for a French-inspired restaurant's meal prep and sourcing sections.
+Primary request: beautiful French potager kitchen garden in Provence after a gentle summer rain, rows of artichokes, fennel, kale and aromatic rosemary and thyme, a weathered pale limestone wall, distant cypress trees, a wicker harvesting basket containing freshly picked leafy vegetables and radishes near the right edge. This is French atmospheric inspiration, not a photograph of the restaurant's supplier.
+Composition/framing: landscape panorama approximately 2:1, low eye-level fine food-and-travel editorial photography, abundant believable botanical detail, focus on the garden to the right and softly shadowed foliage toward the left to allow a headline.
+Lighting/mood: soft golden morning light, subtle dew, calm and inviting, realistic natural colors. Deep olive, warm ivory, small dusty burgundy accents.
+Text: none. No people, labels, lettering, logos, watermark, food plates, bread, dairy, cheese, buildings resembling the Scottsdale restaurant, or artificial fantasy scenery.
+
+The original PNGs were visually inspected and encoded as optimized WebP assets. These are decorative French settings, not the Scottsdale restaurant or its supplier.
+
+Expanded migration notes: See link-audit.json for the original-to-new destination map, retained commerce services, and retrieval limits. About Us and both full stories come from the owner's pasted text, without rewriting.
