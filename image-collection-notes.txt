@@ -1,0 +1,135 @@
+SAPIENS KITCHEN — 12 COMPLEMENTARY IMAGES
+Built-in image generation · October 17, 2026
+Decorative visual inspiration. These are not photographs of the actual restaurant, chef, supplier or products for sale.
+
+1. Provence olive orchard
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/provence-olive-orchard.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/provence-olive-orchard-768.webp
+Pages: about-us.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A tranquil old olive grove in Provence at dawn. Twisted silver-gray trunks, beautifully textured bark, soft silver-green leaves, a low weathered limestone dry-stone wall on the right and distant softly rolling hills. A warm slant of early sun illuminates dew and fine grasses. Eye-level wide photograph, layered foreground branches and gentle natural depth. Intimate and quiet, no buildings or lavender field.
+
+2. The French market
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/french-market-harvest.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/french-market-harvest-768.webp
+Pages: thoughtful-sourcing.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: An exquisite close, wide editorial view of a French morning farmers' market produce stall. Honest wooden crates of artichokes, fennel, aubergines, radishes with imperfect leafy tops, heirloom tomatoes and fresh herbs on the right; a shadowy linen canopy and indistinct empty old stone lane recede toward the left. Natural tiny imperfections and soil traces. A few droplets on produce, warm morning light. No people, no signs, no baskets containing bread or legumes.
+
+3. Herbs of the French kitchen
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/herbes-de-cuisine.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/herbes-de-cuisine-768.webp
+Pages: meal-prep-guide.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A quiet cinematic macro still life of freshly cut thyme, rosemary, sage and bay leaves, a loosely tied bouquet garni with natural kitchen twine, a small aged copper saucepan and linen on dark limestone. Botanical and metal detail exquisitely real, subtle broken side light. Herbs fill the lower right, dark warm olive shadows to the left, shallow but believable depth. No ingredients that look like cheese, butter or grains.
+
+4. A French evening for two
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/table-for-two-at-dusk.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/table-for-two-at-dusk-768.webp
+Pages: special-events.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A close atmospheric still life of a beautifully set French dinner table for two at dusk, without food. Fine empty wine glasses catching candlelight, a small candle in an antique brass holder, soft ivory linen napkins, two understated empty ivory ceramic plates and vintage silver cutlery. Deep burgundy linen detail, a slender olive sprig. Objects gather on the right, intimate dark backdrop and soft warm shadows to the left. No room interior, no people, no flowers obscuring glassware; realistic glass reflections.
+
+5. A quiet French courtyard
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/limestone-courtyard.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/limestone-courtyard-768.webp
+Pages: our-story.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A timeless French limestone courtyard in soft morning light. A beautiful weathered stone archway toward the right, climbing ivy and delicate olive foliage, old terracotta pots with rosemary, cobblestones and gentle dappled shadows. The softly shaded wall on the left has restrained plaster texture for typography. An authentic small historic French village setting, not a hotel or restaurant terrace. No tables, chairs, people, signage, fountain, Eiffel Tower or visible letters.
+
+6. Citrus and linen
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/citrus-and-linen.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/citrus-and-linen-768.webp
+Pages: newsletter.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A sumptuous yet minimal fine-art photographic still life of three imperfect fresh lemons attached to a leafy citrus branch, one halved lemon with naturally translucent pulp, a handmade cream ceramic bowl, and rumpled unbleached linen on a sun-warmed limestone ledge. The composition is concentrated on the right. Soft window light, olive leaf shadows, pale textured plaster, delicate details, bright natural lemon color balanced by quiet deep green. No kitchen room, no oil bottle, no people.
+
+7. The olive-oil ritual
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/olive-oil-ritual.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/olive-oil-ritual-768.webp
+Pages: fats-and-oils.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: An extraordinary photorealistic close-up of a thin golden-green ribbon of olive oil pouring from the cropped neck of an unlabelled dark green glass cruet in the upper right into a small handmade earthenware bowl. A few fresh olives with tiny natural blemishes and one olive branch sit on a charcoal limestone surface. Detailed fluid meniscus, believable translucent liquid, tiny specular highlights and no impossible splashes. Dramatic gentle side light, very dark low-detail olive shadows on left. No visible hands or labels.
+
+8. A Provençal gathering
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/provencal-gathering-table.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/provencal-gathering-table-768.webp
+Pages: catering.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A generous alfresco French gathering table being readied under an old olive tree at golden hour. A long pale linen table extends diagonally from right foreground into a leafy garden; empty simple ceramic place settings, fine empty wine glasses, restrained olive branch runners and antique brass candleholders. Beautiful natural linen folds and glass highlights. Old pale stone garden wall and soft deep-green foliage; composition leaves darker blurred olive branches on the left for a heading. No prepared food, no people, no actual restaurant building, no lavish floral wedding decor.
+
+9. French vines at dawn
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/french-vines-at-dawn.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/french-vines-at-dawn-768.webp
+Pages: chef-aurore.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A poetic, exquisitely realistic wide landscape of a French vineyard at dawn, with carefully ordered green vine rows over softly rolling chalky hills, pale morning haze, muted green and antique gold. A rough old limestone edge and a single delicate grape leaf close to the lens on the right add tactile detail; rows lead toward the softly lit horizon. Deep olive shadows on the left. Elegant and restrained, not a dramatic alpine or coastal landscape. No chateau, labels, people, wine bottles, text or logos.
+
+10. Sonoran blue hour
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/sonoran-blue-hour.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/sonoran-blue-hour-768.webp
+Pages: delivery-pickup.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A serene photographic impression of the Sonoran Desert in North Scottsdale at blue hour immediately after sunset. Sculptural saguaros, scattered palo verde and cholla, weathered gray granite and layered low desert mountain ridges. Soft muted blue and lilac sky with a narrow faded peach horizon, olive desert plants and subtle bronze highlights on stone. The main saguaro group sits on the right, open shaded desert on the left. Beautiful real-world exposure, slight atmospheric depth, no visible stars, no buildings or roads, no Joshua trees or red Sedona spires.
+
+11. Palo verde in bloom
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/palo-verde-blossom.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/palo-verde-blossom-768.webp
+Pages: contact.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: A sophisticated photorealistic botanical close-up of a palo verde tree in spring bloom, inspired by the Sonoran Desert. Delicate tiny golden-yellow blossoms and fine green twigs sharply detailed on the right, soft granite shapes and warm olive desert tones in the distance. Backlit petals, natural asymmetrical branching, extremely realistic tiny stamens and leaves, quiet shaded negative space on left. Refined and warm, no saturated wall of flowers, no people, no butterflies, no text.
+
+12. The gift of an evening
+Final asset: /workspace/sites/sapiens-kitchen-sync/public/assets/gift-of-an-evening.webp
+Responsive asset: /workspace/sites/sapiens-kitchen-sync/public/assets/gift-of-an-evening-768.webp
+Pages: gift-cards.html, gift-card-order.html
+Final prompt:
+Use case: photorealistic-natural.
+Asset type: a unique premium editorial photograph for the French-inspired Sapiens Kitchen website; decorative visual inspiration, not the actual restaurant, chef, supplier or a product for sale.
+Style/medium: exceptionally realistic fine travel and still-life photography, natural optics, rich tactile detail, understated luxury. Cohesive warm ivory, olive green, muted burgundy and antique gold, with natural subject colors. Landscape 3:2 composition. Keep the main subject toward the right half and a quietly shadowed, low-detail left third for overlaid cream headline typography. Protect the main subject for a shallow 2.8:1 horizontal crop and a centered mobile crop.
+Constraints: one continuous photographic scene, not a collage. No text, letters, labels, logos, watermarks or signage. No people or faces. No plated dishes, bread, grains, dairy, cheese, butter, sugar, legumes or seed-oil products. Avoid artificial blur, CGI, illustration, plastic surfaces, oversaturation and exaggerated lens flare.
+Primary scene: An elegant French-inspired still life conveying the gift of an evening. A plain unprinted ivory envelope tied with a narrow soft burgundy silk ribbon on a pale stone ledge, a fresh olive sprig, gentle folds of flax linen and an out-of-focus empty crystal wine glass catching warm light behind it. The objects are arranged on the right, quiet textured dark cream wall on left. Beautiful paper fibers, subtle silk sheen, realistic imperfections. The envelope and card have absolutely no text, graphics, stamps, wax seals or branding. No people, no food.

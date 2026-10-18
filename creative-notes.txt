@@ -27,8 +27,8 @@ France outline: Natural Earth 1:110m country boundaries; mainland France and Cor
 ADDITIONAL FRENCH BACKGROUNDS — October 17, 2026
 Mode: built-in image generation.
 Final project assets:
-/workspace/sites/sapiens-kitchen-sync/dist/assets/paris-dawn-atmosphere.webp
-/workspace/sites/sapiens-kitchen-sync/dist/assets/french-potager-atmosphere.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/paris-dawn-atmosphere.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/french-potager-atmosphere.webp
 
 Paris dawn prompt:
 Use case: photorealistic-natural.
@@ -52,7 +52,7 @@ The original PNGs were visually inspected and encoded as optimized WebP assets. 
 Expanded migration notes: See link-audit.json for the original-to-new destination map, retained commerce services, and retrieval limits. About Us and both full stories come from the owner's pasted text, without rewriting.
 
 REFINEMENT — NATIVE SVG
-Asset: /workspace/sites/sapiens-kitchen-sync/dist/assets/olive-divider.svg
+Asset: /workspace/sites/sapiens-kitchen-sync/public/assets/olive-divider.svg
 Original code-native vector: a restrained olive sprig in brass, reused above the exact story text and in the homepage philosophy section. Paths draw once with a brief leaf fade; reduced motion keeps the full static ornament. No new bitmap generation was needed in this refinement pass.
 
 
@@ -60,12 +60,12 @@ SCOTTSDALE PHOTOGRAPHY & CAROUSEL — October 17, 2026
 
 The two storefront photographs were supplied by the owner. They have only been encoded and resized for delivery; their visual content, signage and Aurore's appearance are retained. The signage is part of the supplied photograph; current hours remain in the site's visit information.
 Final photo assets (each also has -960.webp and -640.webp responsive variants):
-/workspace/sites/sapiens-kitchen-sync/dist/assets/sapiens-storefront-evening.webp
-/workspace/sites/sapiens-kitchen-sync/dist/assets/aurore-storefront.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/sapiens-storefront-evening.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/aurore-storefront.webp
 
 New scenery: built-in image generation, photorealistic-natural.
 Final generated project asset (also -960.webp and -640.webp variants):
-/workspace/sites/sapiens-kitchen-sync/dist/assets/mcdowell-sonoran-atmosphere.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/mcdowell-sonoran-atmosphere.webp
 
 This generated scenery is an artistic impression inspired by the McDowell Sonoran Preserve, not a documented exact viewpoint or a view from the restaurant. The carousel caption and visit hero identify it as a landscape impression. Botanical and geological references: https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/preserve/cultural-resource-master-plan.pdf?sfvrsn=df504145_1 and https://mcdowellsonoran.org/granite/.
 

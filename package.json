@@ -1,0 +1,9 @@
+{
+  "name": "sapiens-kitchen-protected",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-protected.mjs .",
+    "validate": "node scripts/validate-artifact.mjs"
+  }
+}
