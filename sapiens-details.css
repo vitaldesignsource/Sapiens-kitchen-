@@ -6,6 +6,15 @@
   background-position: center, center 47%;
 }
 
+/* A quiet Provençal olive grove brings warmth to the closing invitation. */
+body > footer {
+  background-color: #233d34;
+  background-image: linear-gradient(100deg, #203c33f2 8%, #203c33e3 58%, #1d362ce8), url('assets/provence-olive-orchard.webp');
+  background-size: cover;
+  background-position: center, center 45%;
+  background-repeat: no-repeat;
+}
+
 /* A geographic engraving has its own space beside the gathering invitation. */
 .gather-section { grid-template-columns: minmax(0,1.12fr) minmax(0,1fr) 210px; align-items: center; gap: 5%; padding-left: 7%; padding-right: 7%; }
 .gather-section > div { min-width: 0; }
@@ -69,6 +78,7 @@
 }
 @media(max-width:600px) {
   .site-header { background-position: center, 64% 47%; }
+  body > footer { background-position: center, 67% center; }
   .gather-section { display: grid; grid-template-columns: minmax(0,1fr) 118px; gap: 22px 20px; padding: 47px 8%; }
   .gather-section > div:first-child { grid-column: 1 / -1; }
   .gather-section > div:nth-child(2) { grid-column: 1; grid-row: 2; }
