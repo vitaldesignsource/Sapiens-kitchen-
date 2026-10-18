@@ -133,12 +133,13 @@ function closeNav(restoreFocus=false){const wasOpen=menuToggle.getAttribute('ari
 menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')==='false';menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobileNav.hidden=!open;});
 mobileNav.querySelectorAll('a,button').forEach(a=>a.addEventListener('click',()=>closeNav()));
 document.addEventListener('click',e=>{if(!mobileNav.hidden&&!mobileNav.contains(e.target)&&!menuToggle.contains(e.target))closeNav();});
+document.addEventListener('focusin',e=>{if(!mobileNav.hidden&&!mobileNav.contains(e.target)&&!menuToggle.contains(e.target))closeNav();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNav(true);});
 matchMedia('(min-width:1051px)').addEventListener('change',e=>{if(e.matches)closeNav();});
 const reservationDialog=document.querySelector('#reservation-dialog');const menuDialog=document.querySelector('#menu-dialog');
 function openDialog(dialog,trigger=document.activeElement){
  const current=document.querySelector('dialog[open]');
- const returnFocus=current?.returnFocusTo||trigger;
+ const returnFocus=current?.returnFocusTo||(mobileNav.hidden&&mobileNav.contains(trigger)?menuToggle:trigger);
  document.querySelectorAll('dialog[open]').forEach(d=>d.close());
  dialog.returnFocusTo=returnFocus;dialog.showModal();document.body.classList.add('modal-open');
 }
@@ -205,13 +206,25 @@ document.querySelector('#year').textContent=String(new Date().getFullYear());
 // Complete the smaller visitor journeys with the same care as dinner reservations.
 (() => {
  const header=document.querySelector('.site-header');
- const updateHeader=()=>{header.classList.toggle('has-scrolled',scrollY>32);if(!mobileNav.hidden)mobileNav.style.top=Math.round(header.getBoundingClientRect().bottom)+'px';};
- menuToggle.addEventListener('click',()=>{mobileNav.style.top=Math.round(header.getBoundingClientRect().bottom)+'px';});
- window.addEventListener('scroll',updateHeader,{passive:true});window.addEventListener('resize',updateHeader);updateHeader();
+ const updateHeader=()=>{
+  header.classList.toggle('has-scrolled',scrollY>32);
+  if(!mobileNav.hidden){
+   const viewport=window.visualViewport;
+   const viewportTop=viewport?.offsetTop||0;
+   const top=Math.max(viewportTop,Math.round(header.getBoundingClientRect().bottom));
+   const available=Math.max(0,Math.floor(viewportTop+(viewport?.height||window.innerHeight)-top));
+   mobileNav.style.top=top+'px';
+   mobileNav.style.setProperty('--nav-top',top+'px');
+   mobileNav.style.maxHeight=`max(0px, calc(${available}px - env(safe-area-inset-bottom, 0px)))`;
+  }
+ };
+ menuToggle.addEventListener('click',updateHeader);
+ window.addEventListener('scroll',updateHeader,{passive:true});window.addEventListener('resize',()=>{if(window.innerWidth>1050)closeNav();updateHeader();},{passive:true});
+ window.visualViewport?.addEventListener('resize',updateHeader,{passive:true});window.visualViewport?.addEventListener('scroll',updateHeader,{passive:true});updateHeader();
  if('IntersectionObserver' in window){
-  const navLinks=[...document.querySelectorAll('.desktop-nav>a')];
+  const navLinks=[...document.querySelectorAll('.desktop-nav>a')].filter(link=>link.hash.length>1&&link.origin===window.location.origin&&link.pathname===window.location.pathname);
   const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;navLinks.forEach(link=>{if(link.hash==='#'+entry.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}},{rootMargin:'-18% 0px -55% 0px',threshold:0});
-  navLinks.forEach(link=>{const section=document.querySelector(link.hash);if(section)observer.observe(section);});
+  navLinks.forEach(link=>{let id;try{id=decodeURIComponent(link.hash.slice(1));}catch{return;}const section=document.getElementById(id);if(section)observer.observe(section);});
  }
  const mealDialog=document.querySelector('#meal-dialog');const cateringDialog=document.querySelector('#catering-dialog');
  document.querySelectorAll('[data-meal-prep]').forEach(button=>button.addEventListener('click',()=>openDialog(mealDialog,button)));

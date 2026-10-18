@@ -5,6 +5,10 @@
 .gather-france { position: absolute; z-index: 0; width: 285px; max-width: 32%; right: 1.5%; top: 50%; transform: translateY(-50%) rotate(-6deg); color: #f1cab5; opacity: .4; pointer-events: none; }
 .france-outline { display: block; width: 100%; height: auto; overflow: visible; }
 .france-outline path { fill: currentColor; fill-opacity: .12; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.botanical-rule { display: block; width: 190px; max-width: 100%; height: auto; color: var(--brass); overflow: visible; pointer-events: none; }
+.botanical-rule path { stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.botanical-rule .botanical-stem { fill: none; }
+.botanical-rule .botanical-leaf { fill: currentColor; fill-opacity: .14; }
 .meal-photo { overflow: hidden; }
 @media(max-width:800px) {
   .gather-france { width: 245px; max-width: 35%; right: 2%; }
@@ -48,7 +52,7 @@
 }
 @media(prefers-reduced-motion:reduce) {
   .photo-parallax { transform: none !important; }
-  .gather-france, .france-outline path { animation: none !important; }
+  .gather-france, .france-outline path, .botanical-rule path { animation: none !important; }
 }
 @media print {
   .photo-parallax { transform: none !important; }

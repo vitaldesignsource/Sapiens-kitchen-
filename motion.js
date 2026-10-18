@@ -3,6 +3,10 @@
   'use strict';
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
   const ease = 'cubic-bezier(.22,1,.36,1)';
+  // Keep completed or interrupted moments quiet across preference changes and
+  // browser-history restoration. New observers do not mean a new entrance.
+  const entrances = new WeakSet();
+  const traces = new WeakSet();
   let stop = () => {};
 
   function start() {
@@ -12,11 +16,18 @@
     let disposed = false;
     let frame = 0;
 
-    function play(element, keyframes, options = {}) {
-      if (!element || disposed || preference.matches || document.hidden) return;
+    function play(element, keyframes, options = {}, played = entrances) {
+      if (!element || disposed || preference.matches || document.hidden || played.has(element)) return;
+      // Long-form copy stays still, including when a future template adds a
+      // reveal attribute to its wrapper. Never move a currently focused control.
+      if (element.closest('.story-original') || element.querySelector('.story-original') || element.contains(document.activeElement)) {
+        played.add(element);
+        return;
+      }
       const animation = element.animate(keyframes, {
         duration: 760, easing: ease, fill: 'backwards', ...options
       });
+      played.add(element);
       active.add(animation);
       const release = () => active.delete(animation);
       animation.onfinish = release;
@@ -85,13 +96,36 @@
           play(path, [
             { strokeDasharray: '1', strokeDashoffset: '1', fillOpacity: 0 },
             { strokeDasharray: '1', strokeDashoffset: '0', fillOpacity: .12 }
-          ], { duration: 1800, delay: index * 130, easing: 'cubic-bezier(.45,0,.2,1)' });
+          ], { duration: 1800, delay: index * 130, easing: 'cubic-bezier(.45,0,.2,1)' }, traces);
         });
         mapObserver.unobserve(entry.target);
       });
     }, { threshold: .25 });
     if (gathering) mapObserver.observe(gathering);
     observers.push(mapObserver);
+
+    // A small botanical rule is drawn once, then stays part of the printed
+    // composition. Its complete static form is the no-script/reduced-motion view.
+    const botanicalObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.querySelectorAll('.botanical-stem, .botanical-leaf').forEach((path, index) => {
+          const leaf = path.classList.contains('botanical-leaf');
+          play(path, [
+            { strokeDasharray: '1', strokeDashoffset: '1', fillOpacity: 0 },
+            { offset: .72, strokeDasharray: '1', strokeDashoffset: '0', fillOpacity: 0 },
+            { strokeDasharray: '1', strokeDashoffset: '0', fillOpacity: leaf ? .14 : 0 }
+          ], {
+            duration: leaf ? 1000 : 1200,
+            delay: leaf ? Math.min(index * 65, 390) : 0,
+            easing: 'cubic-bezier(.45,0,.2,1)'
+          }, traces);
+        });
+        botanicalObserver.unobserve(entry.target);
+      });
+    }, { threshold: .6 });
+    document.querySelectorAll('[data-botanical-trace]').forEach(ornament => botanicalObserver.observe(ornament));
+    observers.push(botanicalObserver);
 
     const signature = document.querySelector('.signature');
     const signatureObserver = new IntersectionObserver(entries => {
@@ -150,9 +184,16 @@
         active.clear();
       } else requestUpdate();
     }
+    function focusChanged(event) {
+      active.forEach(animation => {
+        const target = animation.effect?.target;
+        if (target && target.contains(event.target)) animation.cancel();
+      });
+    }
     window.addEventListener('scroll', requestUpdate, { passive: true });
     window.addEventListener('resize', requestUpdate, { passive: true });
     document.addEventListener('visibilitychange', visibilityChanged);
+    document.addEventListener('focusin', focusChanged);
     requestUpdate();
 
     return () => {
@@ -164,6 +205,7 @@
       window.removeEventListener('scroll', requestUpdate);
       window.removeEventListener('resize', requestUpdate);
       document.removeEventListener('visibilitychange', visibilityChanged);
+      document.removeEventListener('focusin', focusChanged);
       photos.forEach(photo => {
         photo.classList.remove('photo-parallax');
         photo.style.removeProperty('--photo-shift');

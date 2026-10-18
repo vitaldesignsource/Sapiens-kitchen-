@@ -13,7 +13,15 @@
   }
   function updateHeader() {
     header.classList.toggle('has-scrolled',window.scrollY>32);
-    if(!mobileNav.hidden)mobileNav.style.top=Math.round(header.getBoundingClientRect().bottom)+'px';
+    if(!mobileNav.hidden) {
+      const viewport=window.visualViewport;
+      const viewportTop=viewport?.offsetTop||0;
+      const top=Math.max(viewportTop,Math.round(header.getBoundingClientRect().bottom));
+      const available=Math.max(0,Math.floor(viewportTop+(viewport?.height||window.innerHeight)-top));
+      mobileNav.style.top=top+'px';
+      mobileNav.style.setProperty('--nav-top',top+'px');
+      mobileNav.style.maxHeight=`max(0px, calc(${available}px - env(safe-area-inset-bottom, 0px)))`;
+    }
   }
   menuToggle.addEventListener('click',()=>{
     const open=menuToggle.getAttribute('aria-expanded')==='false';
@@ -23,15 +31,18 @@
   });
   mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeNav()));
   document.addEventListener('click',event=>{if(!mobileNav.hidden&&!mobileNav.contains(event.target)&&!menuToggle.contains(event.target))closeNav();});
+  document.addEventListener('focusin',event=>{if(!mobileNav.hidden&&!mobileNav.contains(event.target)&&!menuToggle.contains(event.target))closeNav();});
   document.addEventListener('keydown',event=>{if(event.key==='Escape')closeNav(true);});
   window.addEventListener('scroll',updateHeader,{passive:true});
   window.addEventListener('resize',()=>{if(window.innerWidth>1050)closeNav();updateHeader();},{passive:true});
+  window.visualViewport?.addEventListener('resize',updateHeader,{passive:true});
+  window.visualViewport?.addEventListener('scroll',updateHeader,{passive:true});
   updateHeader();
 
   const reservationDialog=document.querySelector('#reservation-dialog');
   let returnFocus=null;
   document.querySelectorAll('[data-reserve]').forEach(button=>button.addEventListener('click',()=>{
-    closeNav();refreshReservation();returnFocus=button;
+    closeNav();refreshReservation();returnFocus=mobileNav.contains(button)?menuToggle:button;
     reservationDialog.showModal();document.body.classList.add('modal-open');
   }));
   reservationDialog.querySelector('.close-dialog').addEventListener('click',()=>reservationDialog.close());
@@ -95,6 +106,9 @@ document.querySelector('#reservation-form').addEventListener('submit',e=>{
       document.querySelector('#page-menu-empty').hidden=count!==0;
     }
     search.addEventListener('input',filterMenu);category.addEventListener('change',filterMenu);filterMenu();
+    document.querySelectorAll('[data-menu-reset]').forEach(button=>button.addEventListener('click',()=>{
+      search.value='';category.value='all';filterMenu();search.focus({preventScroll:true});
+    }));
     document.querySelector('#page-print-menu').addEventListener('click',()=>window.print());
   }
   const catering=document.querySelector('#catering-form');

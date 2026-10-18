@@ -50,3 +50,7 @@ Text: none. No people, labels, lettering, logos, watermark, food plates, bread, 
 The original PNGs were visually inspected and encoded as optimized WebP assets. These are decorative French settings, not the Scottsdale restaurant or its supplier.
 
 Expanded migration notes: See link-audit.json for the original-to-new destination map, retained commerce services, and retrieval limits. About Us and both full stories come from the owner's pasted text, without rewriting.
+
+REFINEMENT — NATIVE SVG
+Asset: /workspace/sites/sapiens-kitchen-sync/dist/assets/olive-divider.svg
+Original code-native vector: a restrained olive sprig in brass, reused above the exact story text and in the homepage philosophy section. Paths draw once with a brief leaf fade; reduced motion keeps the full static ornament. No new bitmap generation was needed in this refinement pass.
