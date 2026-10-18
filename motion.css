@@ -1,0 +1,55 @@
+/* The ornament is part of the static design; motion is a separate enhancement. */
+:root { --motion-ease: cubic-bezier(.22,1,.36,1); }
+.gather-section > div { position: relative; z-index: 1; }
+.gather-section:before { z-index: 2; }
+.gather-france { position: absolute; z-index: 0; width: 285px; max-width: 32%; right: 1.5%; top: 50%; transform: translateY(-50%) rotate(-6deg); color: #f1cab5; opacity: .4; pointer-events: none; }
+.france-outline { display: block; width: 100%; height: auto; overflow: visible; }
+.france-outline path { fill: currentColor; fill-opacity: .12; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.meal-photo { overflow: hidden; }
+@media(max-width:800px) {
+  .gather-france { width: 245px; max-width: 35%; right: 2%; }
+}
+@media(max-width:600px) {
+  .gather-france { width: 240px; max-width: 63%; right: 2%; top: auto; bottom: 18px; transform: rotate(-6deg); opacity: .28; }
+}
+@media(prefers-reduced-motion:no-preference) {
+  /* The scripted sequence replaces the original overlapping hero animations. */
+  .hero-copy h1, .hero-description, .hero-buttons { animation: none; }
+  .button { transition: background .25s ease, border-color .25s ease, transform .4s var(--motion-ease), box-shadow .4s ease; }
+  .button > span { display: inline-block; transition: transform .4s var(--motion-ease); }
+  .button:hover { transform: translateY(-2px); box-shadow: 0 7px 18px #35231a12; }
+  .button:hover > span { transform: translate(2px,-2px); }
+  .text-link > span { transition: transform .45s var(--motion-ease); }
+  .desktop-nav a:after { transition: width .45s var(--motion-ease); }
+  .dish-image > img { transition: transform .9s var(--motion-ease); }
+  .dish-zoom { transition: opacity .3s ease, transform .5s var(--motion-ease); }
+  .mobile-booking { transition: transform .55s var(--motion-ease), visibility .55s; }
+  .menu-toggle span { transition: transform .35s var(--motion-ease); }
+  .mobile-nav:not([hidden]) { animation: sapiens-nav-in .32s var(--motion-ease) both; }
+  dialog[open] { animation: sapiens-dialog-in .34s var(--motion-ease) both; }
+  dialog[open]::backdrop { animation: sapiens-backdrop-in .28s ease both; }
+}
+@media(min-width:900px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .photo-parallax { transform: translate3d(0,var(--photo-shift,0px),0) scale(1.065); }
+  .more-photo > img, .chef-image-wrap > img { transition: filter .8s var(--motion-ease); }
+  .more-photo:hover > img, .chef-image-wrap:hover > img { filter: saturate(1) sepia(0); }
+}
+@keyframes sapiens-nav-in {
+  from { opacity: 0; transform: translate3d(0,-8px,0); }
+  to { opacity: 1; transform: translate3d(0,0,0); }
+}
+@keyframes sapiens-dialog-in {
+  from { opacity: 0; transform: translate3d(0,12px,0) scale(.985); }
+  to { opacity: 1; transform: translate3d(0,0,0) scale(1); }
+}
+@keyframes sapiens-backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .photo-parallax { transform: none !important; }
+  .gather-france, .france-outline path { animation: none !important; }
+}
+@media print {
+  .photo-parallax { transform: none !important; }
+}

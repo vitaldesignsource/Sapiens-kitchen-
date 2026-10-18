@@ -1,0 +1,25 @@
+SAPIENS KITCHEN — CREATIVE AND CONTENT NOTES
+
+New imagery: built-in image generation; October 17, 2026.
+
+assets/provence-atmosphere.webp
+Brief: a photorealistic wide editorial landscape of Provence at sunset, with a limestone farmhouse, cypress trees, olive trees, vineyard rows, and naturally shaded negative space. Warm ivory, deep olive, and soft antique gold. Natural textures, realistic light, no text, logos, or people.
+
+assets/french-kitchen-atmosphere.webp
+Brief: a photorealistic wide editorial still life in a rustic Provençal kitchen. Limestone worktop, copper saucepan, linen, fennel, artichokes, radishes, herbs, olives, and an unlabelled olive-oil bottle, arranged to the right with quiet plaster and shadows to the left. Natural daylight, restrained cream, olive, copper, and burgundy. No text, logos, people, bread, cheese, or butter.
+
+These are atmospheric illustrations of French inspiration. They do not depict the Scottsdale premises, Chef Aurore, or products for sale. The chef portrait, dining-room photograph, and restaurant food images remain the original site assets.
+
+Restaurant content was checked against the restaurant’s published pages on October 17, 2026:
+https://sapienskitchen.com/chef-aurore/
+https://sapienskitchen.com/meal-prep/
+https://sapienskitchen.com/catering/
+https://sapienskitchen.com/paleo-bakery/
+https://sapienskitchen.com/gourmet-shop/
+https://sapienskitchen.com/gift-cards/
+https://sapienskitchen.com/take-out/
+https://sapienskitchen.com/special-events/
+
+The special-occasions page uses evergreen contact and planning information. Historic unavailable offers have not been republished as current events. Ordering, payments, and reservation confirmations remain with the restaurant’s established services.
+
+France outline: Natural Earth 1:110m country boundaries; mainland France and Corsica. https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
