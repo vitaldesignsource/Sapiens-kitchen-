@@ -22,7 +22,7 @@ https://sapienskitchen.com/special-events/
 
 The special-occasions page uses evergreen contact and planning information. Historic unavailable offers have not been republished as current events. Ordering, payments, and reservation confirmations remain with the restaurant’s established services.
 
-France outline: Natural Earth 1:110m country boundaries; mainland France and Corsica. https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
+France outline: Natural Earth 1:10m country boundaries; mainland France, Corsica and coastal islands, with 1,571 vertices after geometric simplification. Public domain. https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_0_countries.geojson
 
 ADDITIONAL FRENCH BACKGROUNDS — October 17, 2026
 Mode: built-in image generation.
@@ -81,3 +81,6 @@ The homepage gallery uses four scenes: evening storefront, Aurore outside, Sonor
 
 Evening storefront replacement · October 17, 2026
 The homepage carousel and Visit page now use the exact owner-supplied EEB9B745-35CE-4ED0-ACE0-68EA12DDD54A.jpeg photograph, encoded into 1536, 960 and 640 px WebP variants. Unique asset names avoid cached versions of the prior storefront image. No visual retouching or generated changes were applied.
+
+Signature details · October 17, 2026
+The five ingredient-exclusion marks are code-native SVGs with consistent double-ring seals and finite, coordinated stroke animations. Reduced motion and no-script views retain complete static artwork. The navigation uses the existing herbs-and-copper photograph beneath a deep green overlay. Visit pairs the restaurant details with the same Google Maps location embed published on the original Sapiens About Us page. CSS and JavaScript references use content versions for reliable cache updates.

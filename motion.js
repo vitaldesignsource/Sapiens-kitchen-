@@ -67,7 +67,7 @@
     }, { threshold: .12, rootMargin: '0px 0px -22px 0px' });
     observers.push(reveal);
     const groups = [
-      '.dietary-intro, .dietary-list > li',
+      '.dietary-intro',
       '.philosophy .section-note, .philosophy h2, .philosophy-columns, .philosophy-copy > .text-link',
       '.menu-section .section-heading, .menu-tabs, #menu-grid, .menu-bottom',
       '.meal-content > .eyebrow, .meal-content > h2, .meal-content > p, .meal-steps, .meal-content > .button',
@@ -86,6 +86,34 @@
         reveal.observe(element);
       });
     });
+
+    // Each SVG seal is engraved once: its ring, ingredient drawing, then the slash.
+    // Finished artwork remains visible without JavaScript or with reduced motion.
+    const dietaryObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.querySelectorAll('.dietary-icon').forEach((icon, index) => {
+          const delay = index * 110;
+          play(icon.querySelector('[data-seal-trace]'), [
+            { strokeDasharray: '1', strokeDashoffset: '1', opacity: .2 },
+            { strokeDasharray: '1', strokeDashoffset: '0', opacity: 1 }
+          ], { duration: 1100, delay, easing: 'cubic-bezier(.45,0,.2,1)' }, traces);
+          icon.querySelectorAll('[data-icon-trace]').forEach((path, part) => {
+            play(path, [
+              { strokeDasharray: '1', strokeDashoffset: '1', opacity: .15 },
+              { strokeDasharray: '1', strokeDashoffset: '0', opacity: 1 }
+            ], { duration: 850, delay: delay + 140 + part * 55 }, traces);
+          });
+          play(icon.querySelector('[data-icon-slash]'), [
+            { strokeDasharray: '1', strokeDashoffset: '1' },
+            { strokeDasharray: '1', strokeDashoffset: '0' }
+          ], { duration: 650, delay: delay + 550 }, traces);
+        });
+        dietaryObserver.unobserve(entry.target);
+      });
+    }, { threshold: .2 });
+    document.querySelectorAll('[data-dietary-animation] .dietary-list').forEach(list => dietaryObserver.observe(list));
+    observers.push(dietaryObserver);
 
     // A single outline trace gives the French ornament a small moment of focus.
     const gathering = document.querySelector('#gather');
