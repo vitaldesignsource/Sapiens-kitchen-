@@ -1,0 +1,42 @@
+{
+  "checked": "2026-10-17",
+  "dinner_dishes": 43,
+  "salad_additions": 3,
+  "paleo_menu_items": 37,
+  "keto_menu_items": 37,
+  "gourmet_selections": 19,
+  "catering_sections": 27,
+  "catering_options": 131,
+  "restored_information": [
+    "Dish ingredients, preparations, sauces and accompaniments",
+    "Protein provenance, portions, approximate weights, serving ranges and minimums",
+    "Paleo/Keto entrée macros and published reheating instructions",
+    "À-la-carte, subscription, account, cart and checkout instructions",
+    "Dietary request process, menu rotation and bread limit",
+    "Delivery ZIP codes, fees, full published schedule differences and missed-delivery procedure",
+    "Catering order minimum, notice, rush phone, staffing/rental notice and delivery charges",
+    "All catering PDF menu categories and options in native HTML",
+    "Bakery ingredient examples and preparation notes",
+    "Gift-card delivery, processing, order forms, fax and email",
+    "About-page ownership, kitchen philosophy, supplier and BYOB details",
+    "Published holiday seating and closure information",
+    "Archived unavailable family-dinner offer clearly labeled"
+  ],
+  "preserved_verbatim": [
+    "About Us supplied paragraph",
+    "Our Story supplied four paragraphs",
+    "Chef Aurore supplied seven paragraphs"
+  ],
+  "source_urls": [
+    "https://sapienskitchen.com/dinner-menu/",
+    "https://sapienskitchen.com/meal-prep/paleo-menu/",
+    "https://sapienskitchen.com/meal-prep/keto-menu/",
+    "https://sapienskitchen.com/gourmet-shop/",
+    "https://sapienskitchen.com/wp-content/uploads/2025/02/PALEO-CATERING-by-Sapiens-Kitchen-2_4_25.pdf",
+    "https://sapienskitchen.com/meal-prep/",
+    "https://sapienskitchen.com/about-us/",
+    "https://sapienskitchen.com/paleo-bakery/",
+    "https://sapienskitchen.com/gift-cards/",
+    "https://sapienskitchen.com/online-purchase-terms-conditions/"
+  ]
+}

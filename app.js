@@ -1,84 +1,346 @@
 const dishes = {
- favorites: [
-  {name:'Sapiens Duck',price:'34.90',image:'duck.webp',tag:'THE FRENCH CLASSIC',description:'Duck confit and seared breast, seasonal vegetables, and a rich orange reduction.'},
-  {name:'Alaskan Salmon',price:'33.90',image:'salmon.webp',tag:'WILD-CAUGHT',description:'Gently seared salmon, roasted potatoes, farm vegetables, and Paleo crème sauce.'},
-  {name:'Sapiens Crème Brûlée',price:'12',image:'brulee.webp',tag:'A SWEET FINISH',description:'Our dairy-free take on a French favorite, with a little chocolate indulgence.'}
- ],
- starters: [
-  {name:'Sapiens Onion Soup',price:'13.90',image:'soup.webp',tag:'FRENCH COMFORT',description:'A deeply savory, slow-crafted French classic from the Sapiens kitchen.'},
-  {name:'Stuffed Mushrooms',price:'16.90',image:'mushrooms.webp',tag:'FROM THE SEA',description:'Jumbo mushrooms filled with Dungeness crab and finished with Béchamel sauce.'},
-  {name:'Sapiens Salad',price:'15.90',image:'salad.webp',tag:'CHEF’S ORIGINAL',description:'Organic greens, smoky bacon, cranberries, pecans, and house Sherry vinaigrette.'}
- ],
- plant: [
-  {name:'Simple Greens',price:'14',image:'greens.webp',tag:'FRESH & VIBRANT',description:'Organic greens, roasted fennel, carrots, and tomatoes with apple cider vinaigrette.'},
-  {name:'Beet Tartar',price:'14',image:'beets.webp',tag:'COLORFUL BY NATURE',description:'Beets, peas, and root vegetables with house sauerkraut and Dijon vinaigrette.'},
-  {name:'Seasonal Veggies',price:'7',image:'vegetables.webp',tag:'FARM TO KITCHEN',description:'A celebration of fresh organic vegetables from local farms.'}
- ],
- desserts: [
-  {name:'Sapiens Crème Brûlée',price:'12',image:'brulee.webp',tag:'THE FRENCH CLASSIC',description:'A delicate, dairy-free crème brûlée with a touch of chocolate.'},
-  {name:'Waffle Tartine',price:'13.90',image:'waffle.webp',tag:'A LITTLE INDULGENCE',description:'A spiced Paleo waffle, served with warm Peruvian chocolate for dipping.'},
-  {name:'Les Chocolats',price:'14',image:'chocolates.webp',tag:'MADE IN OUR KITCHEN',description:'A thoughtful collection of fine chocolates, freshly made at Sapiens.'}
- ]
+  "favorites": [
+    {
+      "name": "Sapiens Duck",
+      "price": "34.90",
+      "image": "duck.webp",
+      "tag": "THE FRENCH CLASSIC",
+      "description": "Duck leg prepared confit-style alongside seared duck breast, roasted potato, local seasonal vegetables and an orange-reduction demi sauce."
+    },
+    {
+      "name": "Alaskan Salmon",
+      "price": "33.90",
+      "image": "salmon.webp",
+      "tag": "WILD-CAUGHT",
+      "description": "Gently seared, wild-caught Alaskan king salmon with roasted potato, seasonal farm vegetables and Paleo crème sauce."
+    },
+    {
+      "name": "Sapiens Crème Brûlée",
+      "price": "12",
+      "image": "brulee.webp",
+      "tag": "A SWEET FINISH",
+      "description": "A non-dairy interpretation of the French classic, with chocolate."
+    }
+  ],
+  "starters": [
+    {
+      "name": "Sapiens Onion Soup",
+      "price": "13.90",
+      "image": "soup.webp",
+      "tag": "FRENCH COMFORT",
+      "description": "Classic French onion soup, presented by the kitchen as its Valley of the Sun favorite."
+    },
+    {
+      "name": "Stuffed Mushrooms",
+      "price": "16.90",
+      "image": "mushrooms.webp",
+      "tag": "FROM THE SEA",
+      "description": "Jumbo mushrooms filled with Oregon Dungeness crab and baked with Béchamel sauce."
+    },
+    {
+      "name": "Sapiens Salad",
+      "price": "15.90",
+      "image": "salad.webp",
+      "tag": "CHEF’S ORIGINAL",
+      "description": "Chef Aurore’s original salad: organic frisée and arugula, nitrate-free applewood-smoked bacon, cranberries, toasted pumpkin seeds and Georgia pecans, with homemade Sherry vinaigrette."
+    }
+  ],
+  "plant": [
+    {
+      "name": "Simple Greens",
+      "price": "14",
+      "image": "greens.webp",
+      "tag": "FRESH & VIBRANT",
+      "description": "Organic mixed greens, baby kale, spinach, arugula, carrots, roasted fennel and tomatoes, dressed with Sapiens apple cider vinaigrette."
+    },
+    {
+      "name": "Beet Tartar",
+      "price": "14",
+      "image": "beets.webp",
+      "tag": "COLORFUL BY NATURE",
+      "description": "Beets, green peas and root vegetables with homemade sauerkraut, pickle and Dijon mustard vinaigrette."
+    },
+    {
+      "name": "Seasonal Veggies",
+      "price": "7",
+      "image": "vegetables.webp",
+      "tag": "FARM TO KITCHEN",
+      "description": "Fresh, organic vegetables sourced from local farms."
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Sapiens Crème Brûlée",
+      "price": "12",
+      "image": "brulee.webp",
+      "tag": "THE FRENCH CLASSIC",
+      "description": "A non-dairy interpretation of the French classic, with chocolate."
+    },
+    {
+      "name": "Waffle Tartine",
+      "price": "13.90",
+      "image": "waffle.webp",
+      "tag": "A LITTLE INDULGENCE",
+      "description": "A Paleo waffle infused with 10 spices, served with warm Peruvian chocolate dip."
+    },
+    {
+      "name": "Les Chocolats",
+      "price": "14",
+      "image": "chocolates.webp",
+      "tag": "MADE IN OUR KITCHEN",
+      "description": "A collection of fine chocolates, freshly made at Sapiens Kitchen."
+    }
+  ]
 };
 const menuSections = {
- 'To begin':[
- ['Sapiens Onion Soup','13.90','Our savory take on the quintessential French onion soup.'],
- ['Eggplant Crostini','12.90','Roasted eggplant on our artisan Paleo toast.'],
- ['Escargot','16.90','Burgundy escargot with fragrant garlic and herbs.'],
- ['Olives','7','Nocellara del Belice olives.'],
- ['Country Terrine','14.90','Pork and chicken liver terrine, Paleo toast, mustard, and cornichons.'],
- ['Farmer’s Flatbread','15.90','Pork belly, butternut squash, cabbage, and greens on Paleo crust.'],
- ['The Paleo Dip','13','Seasonal vegetable, tahini, and herb dip.'],
- ['Oysters Rockefeller','15.90','Baked oysters with spinach, herbs, garlic, and Paleo crème.'],
- ['Paleo Bread Platter','13.90','House Paleo breads with tomato jam and artichoke tapenade.'],
- ['Stuffed Mushrooms','16.90','Dungeness crab-stuffed mushrooms with Béchamel.'],
- ['Bone Broth','7','Slow-simmered grass-fed bone broth, served as a 4 oz portion.']
- ],
- 'From the garden':[
- ['Sapiens Salad','15.90',dishes.starters[2].description],
- ['Simple Greens','14',dishes.plant[0].description],
- ['Beet Tartar','14',dishes.plant[1].description],
- ['Sapiens Kraut','13','Housemade sauerkraut with extra virgin olive oil.']
- ],
- 'Burgers':[
- ['Sapiens Burger','18','Grass-fed beef, shallot chutney, arugula, bacon, and avocado oil mayo on a Paleo bun.'],
- ['Keto Burger','18','Our grass-fed burger, served without a bun, with avocado oil mayo and MCT oil.']
- ],
- 'The main event':[
- ['Roasted Chicken','30','Organic chicken breast, roasted potatoes, seasonal vegetables, and thyme-garlic jus.'],
- ['Liver N’ Onions','33.90','Grass-fed calf liver, sweet onions, bacon, Sherry sauce, potatoes, and vegetables.'],
- ['Sapiens Duck','34.90',dishes.favorites[0].description],
- ['Paleo Meatloaf','30','Veal and Kobe beef meatloaf, potato gratin, seasonal vegetables, and Sherry sauce.'],
- ['Lamb Shank','32.90','Grass-fed Colorado lamb braised in red wine with root vegetables.'],
- ['Alaskan Salmon','33.90',dishes.favorites[1].description],
- ['Filet Mignon','38','Grass-fed filet, potato gratin, seasonal vegetables, and Malbec sauce.'],
- ['Vegetable Napoleon','28','Baked layers of zucchini, squash, potato, tomato, and pepper with a delicate Béchamel.'],
- ['Rabbit','34.90','French rabbit stew with potatoes, root vegetables, and mustard sauce.'],
- ['Vegan Entrée of the Day','34','Chef’s daily creation celebrating fresh seasonal vegetables.'],
- ['Chef Aurore’s Entrée of the Day','Market price','Ask about the kitchen’s daily French-inspired creation.']
- ],
- 'A little on the side':[
- ['Sweet Potatoes','7','Organic sweet yam with vanilla and maple.'],
- ['Potato Au Gratin','7','Yukon potato layers baked with dairy-free Paleo crème.'],
- ['Roasted Plantains','7','Ripe plantains with Fresno pepper aioli.'],
- ['Seasonal Veggies','7','Fresh organic vegetables from local farms.'],
- ['Balsamic-Braised Brussels Sprouts','7','Organic Brussels sprouts with aged balsamic.']
- ],
- 'Something sweet':[
- ['Sapiens Crème Brûlée','12',dishes.desserts[0].description],
- ['Clafoutis','12','An almond-flour and seasonal berry take on the French classic.'],
- ['Apple Crumble','12','Cinnamon-baked apples with house dairy-free ice cream.'],
- ['Waffle Tartine','13.90',dishes.desserts[1].description],
- ['Crème Caramel','12','Caramel custard finished with Sel Gris.'],
- ['Les Chocolats','14',dishes.desserts[2].description]
- ],
- 'For little appetites':[
- ['Little Hunter','15','Paleo meatloaf, potatoes, and vegetables.'],
- ['Little Fisher','15','Wild-caught Alaskan salmon, potatoes, and vegetables.'],
- ['Little Bird Catcher','15','Free-range chicken, potatoes, and vegetables.'],
- ['Little Veggie Gatherer','15','Seasonal sautéed vegetables with potatoes.']
- ]
+  "Starters": [
+    [
+      "Sapiens Onion Soup",
+      "13.90",
+      "Classic French onion soup, presented by the kitchen as its Valley of the Sun favorite."
+    ],
+    [
+      "Eggplant Crostini",
+      "12.90",
+      "Roasted eggplant topping served on artisan Paleo toasts."
+    ],
+    [
+      "Escargot",
+      "16.90",
+      "Snails from Burgundy, France, prepared with garlic and herbs."
+    ],
+    [
+      "Olives",
+      "7",
+      "Nocellara del Belice olives."
+    ],
+    [
+      "Country Terrine",
+      "14.90",
+      "Pork shoulder and chicken-liver terrine with Paleo toast, Maille mustard and cornichon pickle; a traditional French recipe dating to Louis XIV."
+    ],
+    [
+      "Farmer’s Flatbread",
+      "15.90",
+      "Herb-infused pork belly, smashed butternut squash, roasted cabbage and seasonal greens on a rustic Paleo crust."
+    ],
+    [
+      "The Paleo Dip",
+      "13",
+      "Seasonal vegetables blended with sesame tahini and herbs. The kitchen’s original listing highlights the vegetables’ phytonutrients."
+    ],
+    [
+      "Oysters Rockefeller",
+      "15.90",
+      "Puget Sound oysters baked with spinach, garlic and herbs, finished with Paleo crème gratinée."
+    ],
+    [
+      "Paleo Bread Platter",
+      "13.90",
+      "An assortment of freshly baked, grain-free Paleo breads, served with tomato jam and artichoke tapenade."
+    ],
+    [
+      "Stuffed Mushrooms",
+      "16.90",
+      "Jumbo mushrooms filled with Oregon Dungeness crab and baked with Béchamel sauce."
+    ],
+    [
+      "Bone Broth",
+      "7",
+      "A 4 oz serving of concentrated, 36-hour grass-fed bone broth. The published description notes collagen and glutathione."
+    ]
+  ],
+  "Salads": [
+    [
+      "Sapiens Salad",
+      "15.90",
+      "Chef Aurore’s original salad: organic frisée and arugula, nitrate-free applewood-smoked bacon, cranberries, toasted pumpkin seeds and Georgia pecans, with homemade Sherry vinaigrette."
+    ],
+    [
+      "Simple Greens",
+      "14",
+      "Organic mixed greens, baby kale, spinach, arugula, carrots, roasted fennel and tomatoes, dressed with Sapiens apple cider vinaigrette."
+    ],
+    [
+      "Beet Tartar",
+      "14",
+      "Beets, green peas and root vegetables with homemade sauerkraut, pickle and Dijon mustard vinaigrette."
+    ],
+    [
+      "Sapiens Kraut",
+      "13",
+      "Housemade sauerkraut generously finished with extra virgin olive oil. The original menu advertises 50 billion probiotics per bite and a money-back guarantee."
+    ]
+  ],
+  "Salad additions": [
+    [
+      "Poached Egg",
+      "3",
+      "Add a poached egg to any salad."
+    ],
+    [
+      "Breast of Chicken",
+      "7",
+      "Add chicken breast to any salad."
+    ],
+    [
+      "Seared Alaskan Salmon (4 oz)",
+      "8",
+      "Add a 4 oz portion of seared Alaskan salmon to any salad."
+    ]
+  ],
+  "Burgers": [
+    [
+      "Sapiens Burger",
+      "18",
+      "Grass-fed beef with shallot chutney, organic arugula, nitrate-free applewood-smoked bacon and housemade avocado-oil mayonnaise, served on a Sapiens Paleo bun."
+    ],
+    [
+      "Keto Burger",
+      "18",
+      "Bunless grass-fed beef with shallot chutney, organic arugula, nitrate-free applewood-smoked bacon, housemade avocado-oil mayonnaise and MCT oil."
+    ]
+  ],
+  "Entrées": [
+    [
+      "Roasted Chicken",
+      "30",
+      "Organic, pasture-raised chicken breast with roasted potato, local seasonal vegetables and thyme-garlic jus."
+    ],
+    [
+      "Liver N’ Onions",
+      "33.90",
+      "Grass-fed calf liver sautéed with Vidalia onions and bacon in Sherry sauce, accompanied by roasted potato and local seasonal vegetables. The kitchen identifies it as its most nutrient-dense menu item."
+    ],
+    [
+      "Sapiens Duck",
+      "34.90",
+      "Duck leg prepared confit-style alongside seared duck breast, roasted potato, local seasonal vegetables and an orange-reduction demi sauce."
+    ],
+    [
+      "Paleo Meatloaf",
+      "30",
+      "Veal and Kobe beef meatloaf with potato au gratin, local seasonal vegetables and Sherry sauce."
+    ],
+    [
+      "Lamb Shank",
+      "32.90",
+      "Grass-fed Colorado lamb shank braised in red wine with root vegetables."
+    ],
+    [
+      "Alaskan Salmon",
+      "33.90",
+      "Gently seared, wild-caught Alaskan king salmon with roasted potato, seasonal farm vegetables and Paleo crème sauce."
+    ],
+    [
+      "Filet Mignon",
+      "38",
+      "Grass-fed filet with potatoes au gratin, local seasonal vegetables and Argentinian Malbec wine sauce."
+    ],
+    [
+      "Vegetable Napoleon",
+      "28",
+      "A vegan preparation of layered zucchini, yellow squash, potatoes, tomatoes and bell peppers, baked with Béchamel sauce."
+    ],
+    [
+      "Rabbit",
+      "34.90",
+      "Naturally farmed Appalachian rabbit, braised French-style with potatoes and root vegetables in a Maille mustard sauce."
+    ],
+    [
+      "Vegan Entrée of the Day",
+      "34",
+      "A seasonal vegan plate made from the fresh vegetables available that day and paired with a delicate sauce."
+    ],
+    [
+      "Chef Aurore’s Entrée of the Day",
+      "Market price",
+      "Chef Aurore’s daily selection, prepared in the traditions of contemporary French fine dining. Ask the team for today’s dish and price."
+    ]
+  ],
+  "Sides": [
+    [
+      "Sweet Potatoes",
+      "7",
+      "Organic sweet yam with a vanilla-maple glaze."
+    ],
+    [
+      "Potato Au Gratin (Non-Dairy)",
+      "7",
+      "Thinly layered Yukon potatoes baked with Paleo crème."
+    ],
+    [
+      "Roasted Plantains",
+      "7",
+      "Ripe amarillo plantains with Fresno-pepper aioli."
+    ],
+    [
+      "Seasonal Veggies",
+      "7",
+      "Fresh, organic vegetables sourced from local farms."
+    ],
+    [
+      "Balsamic-Braised Brussels Sprouts",
+      "7",
+      "Organic Brussels sprouts braised in aged balsamic."
+    ]
+  ],
+  "Desserts": [
+    [
+      "Sapiens Crème Brûlée",
+      "12",
+      "A non-dairy interpretation of the French classic, with chocolate."
+    ],
+    [
+      "Clafoutis {klah-foo-tee}",
+      "12",
+      "A French-style Paleo pie made with almond flour and seasonal berries."
+    ],
+    [
+      "Apple Crumble",
+      "12",
+      "Baked apples infused with Ceylon cinnamon and topped with homemade non-dairy ice cream."
+    ],
+    [
+      "Waffle Tartine",
+      "13.90",
+      "A Paleo waffle infused with 10 spices, served with warm Peruvian chocolate dip."
+    ],
+    [
+      "Crème Caramel",
+      "12",
+      "Caramel custard finished with a flake of Sel Gris salt."
+    ],
+    [
+      "Les Chocolats",
+      "14",
+      "A collection of fine chocolates, freshly made at Sapiens Kitchen."
+    ]
+  ],
+  "“Little Cavemen” Kids’ Menu": [
+    [
+      "Little Hunter",
+      "15",
+      "Paleo meatloaf, potatoes and vegetables."
+    ],
+    [
+      "Little Fisher",
+      "15",
+      "Wild-caught Alaskan salmon, potatoes and vegetables."
+    ],
+    [
+      "Little Bird Catcher",
+      "15",
+      "Free-range chicken breast, potatoes and vegetables."
+    ],
+    [
+      "Little Veggie Gatherer",
+      "15",
+      "Sautéed seasonal vegetables and potatoes."
+    ]
+  ]
 };
+const menuGroupNotes = {"Salads": "Add to any salad: poached egg $3; chicken breast $7; seared Alaskan salmon (4 oz) $8.", "Entrées": "Keto and AIP vegetable substitutions are available."};
 const grid=document.querySelector('#menu-grid');
 const tabs=[...document.querySelectorAll('[data-category]')];
 const dishDialog=document.querySelector('#dish-dialog');
@@ -157,7 +419,7 @@ function renderFullMenu(){
   if(category!=='all'&&category!==group)return '';
   const matches=items.filter(item=>normalize(item.join(' ')).includes(query));count+=matches.length;
   if(!matches.length)return '';
-  return `<section class="full-menu-group"><h3>${group}</h3>${matches.map(([name,price,description])=>`<div class="full-menu-item"><h4>${name}</h4><span>${price==='Market price'?price:'$'+price}</span><p>${description}</p></div>`).join('')}</section>`;
+  return `<section class="full-menu-group"><h3>${group}</h3>${menuGroupNotes[group]?`<p class="full-menu-group-note">${menuGroupNotes[group]}</p>`:''}${matches.map(([name,price,description])=>`<div class="full-menu-item"><h4>${name}</h4><span>${price==='Market price'?price:'$'+price}</span><p>${description}</p></div>`).join('')}</section>`;
  }).join('');
  document.querySelector('#full-menu-content').innerHTML=html||'<div class="menu-empty"><h3>Something else in mind?</h3><p>Try a dish or ingredient, such as salmon, duck, or chocolate.</p></div>';
  document.querySelector('#menu-result-count').textContent=(query||category!=='all')?`${count} ${count===1?'dish':'dishes'} found`:`${count} dishes, made with care`;

@@ -102,7 +102,7 @@ document.querySelector('#reservation-form').addEventListener('submit',e=>{
         });
         group.hidden=matches===0;count+=matches;
       });
-      document.querySelector('#page-menu-count').textContent=count+' '+(count===1?'dish':'dishes')+' to discover';
+      const status=document.querySelector('#page-menu-count');const noun=status.dataset.countNoun||'dish';status.textContent=count+' '+(count===1?noun:noun==='dish'?'dishes':noun+'s')+' to discover';
       document.querySelector('#page-menu-empty').hidden=count!==0;
     }
     search.addEventListener('input',filterMenu);category.addEventListener('change',filterMenu);filterMenu();
