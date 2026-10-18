@@ -60,7 +60,7 @@ SCOTTSDALE PHOTOGRAPHY & CAROUSEL — October 17, 2026
 
 The two storefront photographs were supplied by the owner. They have only been encoded and resized for delivery; their visual content, signage and Aurore's appearance are retained. The signage is part of the supplied photograph; current hours remain in the site's visit information.
 Final photo assets (each also has -960.webp and -640.webp responsive variants):
-/workspace/sites/sapiens-kitchen-sync/public/assets/sapiens-storefront-evening.webp
+/workspace/sites/sapiens-kitchen-sync/public/assets/sapiens-storefront-night.webp
 /workspace/sites/sapiens-kitchen-sync/public/assets/aurore-storefront.webp
 
 New scenery: built-in image generation, photorealistic-natural.
@@ -78,3 +78,6 @@ Lighting/mood: low golden sunlight just before sunset, warm tactile stone, long 
 Constraints: no buildings, no restaurant, no people, no animals, no signage, no typography, no logos, no watermark; no red Sedona spires, no sand dunes, no Monument Valley, no Joshua trees, no fantastical cactus shapes, no oversaturated orange sky, no artificial lens flare. Authentic Sonoran desert botany and weathered granite geology.
 
 The homepage gallery uses four scenes: evening storefront, Aurore outside, Sonoran landscape impression, and the existing dining-room photograph. Seven-second autoplay runs only while at least a quarter of the gallery is in view and the document is visible. Mouse hover pauses the photos; keyboard focus and manual navigation stop autoplay until Play is selected. Controls support arrows, Home/End, direct photo selection and swipe. Reduced motion disables autoplay and photo zoom. All four images remain accessible in a native scrolling gallery without JavaScript.
+
+Evening storefront replacement · October 17, 2026
+The homepage carousel and Visit page now use the exact owner-supplied EEB9B745-35CE-4ED0-ACE0-68EA12DDD54A.jpeg photograph, encoded into 1536, 960 and 640 px WebP variants. Unique asset names avoid cached versions of the prior storefront image. No visual retouching or generated changes were applied.
